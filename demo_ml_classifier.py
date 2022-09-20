@@ -60,6 +60,8 @@ while True:
         Classifier.des_tree()
     elif n == 4:
         Classifier.knearest()
+    else:
+        print("\tinvalid choice")
     
         
 
