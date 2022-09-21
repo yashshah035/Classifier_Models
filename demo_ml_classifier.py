@@ -19,7 +19,7 @@ data['sex'] = data['sex'].map({'male': 1, 'female': 0})
 X = data.drop(['Unnamed: 0', 'target'], axis = 1)
 y = data['target']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=100, train_size= 0.70, shuffle= True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state = 42, train_size= 0.80, test_size=0.20, shuffle= True)
 
 class Classifier:
 
