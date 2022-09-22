@@ -30,7 +30,6 @@ class Classifier:
         p = svm.predict(X_test)
         print(f"Accuracy of SVM: {accuracy_score(y_test, p)*100}")
         
-        #Accuracy of SVM: 66.10169491525424
         
     def gausian():
         gauss = GaussianNB()
@@ -38,7 +37,7 @@ class Classifier:
         p = gauss.predict(X_test)
         print(f"Accuracy of Naive Bayes: {accuracy_score(y_test, p)*100}")
         
-        #Accuracy of Naive Bayes: 81.35593220338984
+        
 
     def des_tree():
         dst = DecisionTreeClassifier()
@@ -46,15 +45,13 @@ class Classifier:
         p = dst.predict(X_test)
         print(f"Accuracy of Decision Tree: {accuracy_score(y_test, p)*100}")
         
-        #Accuracy of Decision Tree: 74.57627118644068
-
+    
     def knearest(): 
         knn =  KNeighborsClassifier(n_neighbors=30)
         knn.fit(X_train,y_train)
         p = knn.predict(X_test)
         print(f"Accuracy of Knearest Neighbor: {accuracy_score(y_test, p)*100}")
         
-        #Accuracy of Knearest Neighbor: 72.88135593220339
 
 while True:
     n = int(input("\nChoices for Classifier:\n \t1) Support Vector Machine\n\t2) Naive Bayes\n\t3) Descision Tree\n\t4) Knearest Neighbors\n\t:= "))
