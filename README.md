@@ -40,10 +40,10 @@ The project uses the "Heart Disease Classification Dataset" from Kaggle. The dat
 3. The script will load the dataset, preprocess the data, and present you with a menu to choose the classifier you want to use.
 
 4. Select the classifier by entering the corresponding number:
-1. Support Vector Machine
-2. Naive Bayes
-3. Decision Tree
-4. K-Nearest Neighbors
+   - Support Vector Machine
+   - Naive Bayes
+   - Decision Tree
+   - K-Nearest Neighbors
 
 5. The script will train the chosen classifier on the training data and evaluate its performance on the test data, displaying the accuracy score.
 
